@@ -126,10 +126,13 @@ public class Main extends Application {
          GUIvychody = new GUIVychody(hra.getHerniPlan(),centerText,zadejPrikazTextField);       
          borderPaneBackp.setRight(GUIvychody.getList());
          
-         // panel batohu
+         // panel batohu s nadpisem (předměty v lokaci a batoh) ve formátu Label -->doplnit u obhajoby
          GUIbatoh = new GUIbatoh(hra.getHerniPlan(),centerText);
          borderPaneItemOut.setRight(GUIbatoh.getList());
          borderPane.setRight(borderPaneItemOut);
+         
+         Label nadpis = new Label("Předměty v lokaci                    Batoh ");
+         borderPaneItemOut.setTop(nadpis);
            
          // panel s mapou
          borderPaneBackp.setTop(mapa);

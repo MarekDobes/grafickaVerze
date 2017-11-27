@@ -92,12 +92,12 @@ public class GUIbatoh implements Observer{
                        
                     }
                     
-                    String vstupniPrikaz = "poloz "+nazev;
-                    String odpovedHry = plan.getHra().zpracujPrikaz("poloz "+nazev);
+                    String iPrikaz = "poloz "+nazev;
+                    String zpracuj = plan.getHra().zpracujPrikaz("poloz "+nazev);
 
                 
-                    centerText.appendText("\n" + vstupniPrikaz + "\n");
-                    centerText.appendText("\n" + odpovedHry + "\n");
+                    centerText.appendText("\n" + iPrikaz + "\n");
+                    centerText.appendText("\n" + zpracuj + "\n");
                     
                
                     plan.notifyAllObservers();

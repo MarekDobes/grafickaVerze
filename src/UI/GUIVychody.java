@@ -95,11 +95,11 @@ private void prehrajKroky(){
                 if (click.getClickCount() == 1) 
                 {
                     noway = " Dál už to nepůjde";
-                    String vstupniPrikaz = "jdi "+Lview.getSelectionModel().getSelectedItem();
-                    String odpovedHry = plan.getHra().zpracujPrikaz("jdi "+Lview.getSelectionModel().getSelectedItem());
+                    String iPrikaz = "jdi "+Lview.getSelectionModel().getSelectedItem();
+                    String zpracuj = plan.getHra().zpracujPrikaz("jdi "+Lview.getSelectionModel().getSelectedItem());
 
-                    centerText.appendText("\n" + vstupniPrikaz + "\n");
-                    centerText.appendText("\n" + odpovedHry + "\n");
+                    centerText.appendText("\n" + iPrikaz + "\n");
+                    centerText.appendText("\n" + zpracuj + "\n");
                     prehrajKroky();
                     
                     if (plan.getHra().konecHry()) {

@@ -87,12 +87,12 @@ public class GUILokacePredmety implements Observer{
                        
                     }
                     
-                    String vstupniPrikaz = "vezmi "+nazev;
-                    String odpovedHry = plan.getHra().zpracujPrikaz("vezmi "+nazev);
+                    String iPrikaz = "vezmi "+nazev;
+                    String zpracuj = plan.getHra().zpracujPrikaz("vezmi "+nazev);
 
                 
-                    centerText.appendText("\n" + vstupniPrikaz + "\n");
-                    centerText.appendText("\n" + odpovedHry + "\n");
+                    centerText.appendText("\n" + iPrikaz + "\n");
+                    centerText.appendText("\n" + zpracuj + "\n");
                
                     plan.notifyAllObservers();
                 }
